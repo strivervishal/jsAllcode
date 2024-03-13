@@ -1,0 +1,57 @@
+ <!-- dom in javascript  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 1</title>
+</head>
+<body>
+  <p id="one"> vishal</p> 
+  <!-- extraction by class  -->
+  <ul>
+    <li class="chai">one</li>
+    <li class="chai">two</li>
+    <li class="chai">three</li>
+  </ul>
+   <!-- extract by tag -->
+  <h4>hello</h4>
+  <h4>hey</h4>
+  <h4><span>vishal</span> hola</h4>
+
+  <!-- ectract by querry selector  -->
+<h2 class="aurcode">vishal</h2>
+<h2 id="user">ajay</h2>
+<h2>vivek</h2>
+    <script>
+// <!-- extraction by id -->
+ let var1 = document.getElementById("one");
+ console.log(var1.innerText);
+//  console.log(var1.innerHTML);
+var1.innerText = "ajay";
+console.log(var1);
+
+// extraction by class and also manupulation
+  let var2 = document.getElementsByClassName("chai")
+//   console.log(var2[1].innerText);
+//   console.log(var2[1].innerText);
+//  var2[2].innerText = "eight";
+//  console.log(var2[2].innerText);
+
+// ********** extraction by tag
+let var3 = document.getElementsByTagName("h4")
+// console.log(var3[2].innerText);
+// var3[2].innerText = 4;
+// console.log(var3[2].innerText);
+
+// extraction by querry selector 
+
+// let var4 = document.querySelector(".aurcode")
+//   let var4 = document.querySelector("#user")
+  let var4 = document.querySelector("#user");   
+console.log(var4.innerText);
+var4.innerText = "priyanshu";
+console.log(var4.innerText);
+   </script>
+</body>
+</html>

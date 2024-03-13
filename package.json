@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "prompt": "start",
+    "prompt-sync": "^4.2.0",
+    "save": "^2.9.0"
+  },
+  "name": "js1",
+  "version": "1.0.0",
+  "main": "addObjectandArray.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

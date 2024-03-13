@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Dom part -3</title>
+</head>
+<body>
+    <h1>Hello dear friends</h1>
+    <p id="js"></p>
+    <button onclick="chai()" id="Hitman">submit</button>
+    <script>
+        // event listener in js 
+        document.addEventListener("dblclick",hello)
+        function hello() {
+            document.getElementById("js").innerText = "Emiway Bantai";
+            document.getElementById("js").style.color = "red";
+            document.getElementById("js").style.padding = "5px"
+            document.getElementById("js").style.backgroundColor = "orange";
+            document.getElementById("js").style.border = "2px solip black  "
+        }
+        function chai() {
+            document.getElementById("Hitman").innerText = "code";
+            document.getElementById("Hitman").style.color = "red";
+            document.getElementById("Hitman").style.padding = "5px"
+            document.getElementById("Hitman").style.margin = "15px"
+            document.getElementById("Hitman").style.backgroundColor = "orange";
+            document.getElementById("Hitman").style.border = "2px solip black"
+        }
+
+    </script>
+</body>
+</html>

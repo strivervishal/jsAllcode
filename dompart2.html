@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dom part-2</title>
+</head>
+<body>
+    <!-- remove child  -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+        // creation of element in js 
+      let title = document.createElement("h1");
+      title.className ="pw-skills";
+      title.textContent ="pw-skills,Namaste";
+      title.style.fontSize = "20px";
+      console.log(title.textContent);
+      document.body.appendChild(title);
+    //   title.textContent = "hello vishal";
+    //   console.log(title);
+
+    // how to remove child in js 
+    let ul = document.querySelector("ul");
+    console.log(ul);
+    let list = document.querySelectorAll("li");
+    console.log(list);
+    list[0].style.color = "red";
+    list[1].style.color = "green";
+    list[2].style.color = "yellow";
+    console.log(list);
+    for(list of list){
+        ul.removeChild(list);
+    }
+    console.log(ul);
+
+    </script>
+</body>
+</html>
